@@ -11,6 +11,14 @@ Mosquitos start to emerge from hiberation in May, peak in roughly Mid-August but
 
 It is believed that hot and dry conditions are more favorable for West Nile virus than cold and wet. We provide you with the dataset from NOAA of the weather conditions of 2007 to 2014, during the months of the tests.
 
+<h2>Tools Used</h2>
+<ul>
+  <li>Pandas</li>
+  <li>HDBSCAN</li>
+  <li>Classifiers: Random Forest, CatBoost, XGBBoost, Logistic Regression, SGVClassifier</li>
+  <li>OpenStreetMap</li>
+</ul>
+
 <h2>Data Sources</h2>
 the data for this project was taken from the Kaggle competition:https://www.kaggle.com/c/predict-west-nile-virus/.
 The Chicago Department of Public Health provided the following csv files:
