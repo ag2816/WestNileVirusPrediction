@@ -14,9 +14,12 @@ It is believed that hot and dry conditions are more favorable for West Nile viru
 <h2>Tools Used</h2>
 <ul>
   <li>Pandas</li>
-  <li>HDBSCAN</li>
+  <li>Imbalanced Learn (SMOTE)</li>
+  <li>DataFrameMapper, Pipelines</li>
+  <li>Clustering: HDBSCAN</li>
   <li>Classifiers: Random Forest, CatBoost, XGBBoost, Logistic Regression, SGVClassifier</li>
-  <li>OpenStreetMap</li>
+  <li>Visualizations: Seaborn, Matplotlib, OpenStreetMap</li>
+  <li>Geopy</li>
 </ul>
 
 <h2>Data Sources</h2>
