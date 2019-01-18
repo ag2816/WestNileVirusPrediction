@@ -38,7 +38,8 @@ Within the training data, decided to treat 2013 as the prediction year for train
 We are trying to predict the labelled variable WnvPresent (Y/N field in dataset)
 <h2>Steps taken</h2>
 <ul>
-<li>Basic Cleanup and EDA</li>
+<li>Basic Cleanup (handle missing data, consolidate satelite traps, find "top traps" for WNV presence)</li>
+<li>EDA</li>
 <li>train test split (use 2013 as our test dataset)</li>
 <li>use data frame mapper to imput missing values and select only the columns of interest</li>
 <li>calculate key weather data (cumulative precipitation for year and running average precip and temp for last 1 and 2 weeks)</li>
@@ -52,13 +53,14 @@ We are trying to predict the labelled variable WnvPresent (Y/N field in dataset)
 
 <h2>EDA Findings</h2>
 <ul>
+<li>The dataset is imbalanced --  there are many more cases of negative results than positive results for the presence of West Nile virus.  West nile is only found 3.85% of the time.   We will need to take action to address this imbalance prior to training a model</li
 <li>Culex Pipiens appears to be the main carrier of West Nile Virus as it is most commonly associated with the presence of west nile virus (note: we do not have a count of WNV infected mosquitos -- just a yes/no flag about whether it was present)</li>
-<li>only 8 of 134 traps have more than 10 positive results Mosquito Numbers:</li>
+<li>only 8 of 134 traps have more than 10 positive results Mosquito Numbers</li>
 <li>Culex Pipiens numbers dropped off rapidly in 2009 and 2011, although increased again slightly in 2013</li>
-<li>culex restuans is showing a gradual increase over time</li>
-<li>most counts are up in 2013 over 2011 West Nile Counts</li>
-<li>in 2007, mosquito counts peaked in August, while in 2009, they peaked much earlier in June and July</li>
-<li>2011 also showed a peak in July</li>
+<li>Culex Restuans is showing a gradual increase over time</li>
+<li>Most counts are up in 2013 over 2011 West Nile Counts</li>
+<li>In 2007, mosquito counts peaked in August, while in 2009, they peaked much earlier in June and July.  2011 also showed a peak in July</li>
+  <li>2007 had wet august, 2009 had cool fall and 2011 had a wet june</li>
 </ul>
 
 
